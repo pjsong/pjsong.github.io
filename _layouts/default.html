@@ -1,0 +1,67 @@
+---
+nav1: Portfolio
+nav1_cn: "项目展示"
+
+nav2: About
+nav2_cn: 关于
+
+nav3: Contact
+nav3_cn: 联系
+
+portfolio1: Portfolio
+portfolio1_cn: "项目展示"
+
+about1: About
+about1_cn: "说明"
+
+about2: "Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization."
+about2_cn: "所有项目基于开源，也坚持开源"
+
+about3: "Whether you'are a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!"
+about3_cn: "本页面基于一个模板的改造，和Jekyll的练习"
+
+about4: "Download Theme"
+about4_cn: 下载
+
+contact1: "contact me"
+contact1_cn: 联系站长
+contact2: "name"
+contact2_cn: 称呼
+contact21: "Please enter your name."
+contact21_cn: "请输入称呼"
+contact3: "Email"
+contact31: "Please enter your email address."
+contact31_cn: "请输入邮箱地址"
+contact32: "Not a valid email address."
+contact32_cn: "邮箱地址无效"
+contact3_cn: 邮箱
+contact4: "Message"
+contact4_cn: 内容
+contact41: "Please enter a message."
+contact41_cn: 请输入内容
+contact5: Send
+contact5_cn: 发送
+---
+
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body id="page-top" class="index">
+    {% include nav.html %}
+    {% include header.html %}
+    {% include portfolio_grid.html %}
+    {% include about.html %}
+
+    {% if site.contact == "static" %}
+    {% include contact_static.html %}
+    {% elsif site.contact == "disqus" %}
+    {% include contact_disqus.html %}
+    {% else %}
+    {% include contact.html %}
+    {% endif %}
+    {{ content }}
+    {% include footer.html %}
+    {% include modals.html %}
+    {% include js.html %}
+    </body>
+</html>

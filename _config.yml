@@ -1,0 +1,66 @@
+# Site settings
+title: 傲咪迪主人
+email: jeson.peng@gmail.com
+url: https://pjsong.github.io
+description: "Oursmedia 主人."
+skills: "Web, Java, Php, Cloud"
+meta_author: pjsong
+
+# Google webmaster tools
+google_verify:
+
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Contact form:
+# - static : pass through formspree.io to validate email sending
+# - disqus : replace contact form by disqus thread
+# - comment the line below if you want to stick with the default PHP contact form
+contact: static
+
+# If you use disqus you need disqus shortname
+# https://help.disqus.com/customer/portal/articles/466208
+disqus_shortname: myshortname
+
+# Color settings (hex-codes without the leading hash-tag)
+# #18bc9c #80B3FF
+# #"24,288,156" #"128,179,255"  
+# #2c3e50 #FD6E8A
+# #233140 #A2122F  
+color:
+  primary: 80B3FF
+  primary-rgb: "128,179,255"
+  secondary: FD6E8A
+  secondary-dark: A2122F
+
+# Footer settings
+footer:
+  copyright: 东莞市傲咪迪数据技术有限公司
+  location: 位置
+  social: 互联网上的站长
+  credits: 声明
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/pjsong3101
+  - title: facebook
+    url: https://www.facebook.com/oursmedia/
+  - title: stack-overflow
+    url: http://stackoverflow.com/users/6660907
+  - title: bitbucket
+    url: https://bitbucket.org/jeson_peng/
+  - title: github
+    url: http://github.com/pjsong
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: 松山湖
+  - line: 东莞市 523070
+
+# Credits content
+credits: '来源于 <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+
+# Build settings
+markdown: kramdown
+permalink: pretty
